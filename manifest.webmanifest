@@ -1,0 +1,31 @@
+{
+  "id": "/",
+  "name": "DV PRO · Diamond Voice Pro — Lapidando vozes preciosas",
+  "short_name": "DV PRO",
+  "description": "Estúdio digital de treino vocal: 39 exercícios, piano, metrônomo, afinação ao vivo e narração em português do Brasil. Funciona offline.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#07111F",
+  "theme_color": "#07111F",
+  "categories": ["music", "education", "health"],
+  "icons": [
+    { "src": "./src/assets/icons/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./src/assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Treinar agora", "short_name": "Treinar", "url": "./index.html#/rotinas" },
+    { "name": "Metrônomo", "short_name": "Metrônomo", "url": "./index.html#/metronomo" },
+    { "name": "Minha evolução", "short_name": "Evolução", "url": "./index.html#/progresso" }
+  ]
+}

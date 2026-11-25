@@ -1,0 +1,44 @@
+============================================================
+ DV PRO ONLINE — como colocar o app no ar (link https)
+============================================================
+O DV PRO é um app web estático: ele funciona 100% online por
+um endereço https, e é nesse endereço que o microfone, os
+áudios com os nomes dos alunos e todas as funções trabalham
+perfeitamente (o navegador exige https ou localhost para
+liberar o microfone).
+
+JEITO MAIS FÁCIL (5 minutos, grátis, sem programar):
+ 1. Entre em https://app.netlify.com/drop (Netlify Drop).
+ 2. Arraste a pasta DV-PRO (descompactada) para a página.
+ 3. Pronto: você recebe um link https://....netlify.app —
+    é o app ONLINE. Abra esse link, permita o microfone e use.
+    No celular, use "Instalar app / Adicionar à tela inicial".
+
+OUTRAS OPÇÕES GRÁTIS (mesma ideia, arrastar a pasta):
+ • Vercel:  https://vercel.com/new  (deploy de pasta estática)
+ • GitHub Pages: repositório com os arquivos → Settings → Pages
+
+DEPOIS DE PUBLICAR:
+ • Compartilhe o link https com quem for usar.
+ • Microfone: sempre pelo link https, em guia própria do
+   navegador (não dentro de prévia embutida), tocando em
+   Permitir quando o navegador perguntar.
+ • Os dados (turma e fichas) ficam salvos em cada aparelho/
+   navegador onde o app é usado.
+
+ATUALIZOU O APP? Publique a pasta de novo no mesmo serviço
+que o link é atualizado.
+============================================================
+
+ATUALIZAÇÃO AUTOMÁTICA (a partir da vsp-v19):
+ • Depois que você publica uma versão nova, o app nos
+   aparelhos dos usuários se atualiza SOZINHO: ele confere a
+   versão a cada minuto e ao abrir/voltar para a aba, baixa a
+   versão nova e recarrega uma vez. Ninguém precisa limpar
+   cache, reinstalar nem fazer nada.
+ • Para PUBLICAR a versão nova continua sendo arrastar a
+   pasta (jeito acima). Quer publicar sem nem arrastar?
+   Conecte um repositório do GitHub ao Netlify
+   (Site settings → Build & deploy → Link repository):
+   aí cada envio para o GitHub publica e atualiza todos
+   os aparelhos automaticamente.

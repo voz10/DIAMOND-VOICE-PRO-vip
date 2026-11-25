@@ -1,0 +1,9 @@
+# DV PRO — cabeçalhos para o Netlify (e hospedagens compatíveis)
+# Entrada, service worker e versão NUNCA podem ficar presos em cache:
+/index.html
+  Cache-Control: no-cache, must-revalidate
+/sw.js
+  Cache-Control: no-cache, must-revalidate
+/version.json
+  Cache-Control: no-cache, must-revalidate
+# Demais arquivos: o service worker controla a atualização

@@ -1,0 +1,67 @@
+============================================================
+ DV PRO · DIAMOND VOICE PRO — Lapidando vozes preciosas
+ COMO INSTALAR E USAR (leia: é rapidinho)
+============================================================
+
+⚠ IMPORTANTE — NÃO abra o arquivo index.html sozinho!
+   Abrindo o index direto (dois cliques nele), o navegador
+   bloqueia os módulos do app E o microfone, e a tela fica
+   travada parecendo "bugada". Isso é uma trava de segurança
+   de todos os navegadores, não um defeito do app.
+   Use um dos jeitos certos abaixo.
+
+------------------------------------------------------------
+ JEITO 1 — No computador (Windows) · o mais fácil
+------------------------------------------------------------
+ 1. Descompacte a pasta DV-PRO (botão direito → Extrair tudo).
+ 2. Dentro da pasta, clique duas vezes em: iniciar-app.bat
+ 3. O navegador abre sozinho em http://localhost:3000
+    Deixe a janelinha preta aberta enquanto usa o app.
+ 4. Quando o app pedir o microfone, clique em PERMITIR.
+    Nesse endereço (localhost) o microfone funciona de verdade.
+
+ (Mac/Linux: clique duas vezes em iniciar-app.sh — se não
+  abrir, abra o Terminal na pasta e rode:  sh iniciar-app.sh)
+
+ Requisito: Node.js instalado (grátis em https://nodejs.org).
+ Se não tiver Node, o iniciador usa o Python automaticamente.
+
+------------------------------------------------------------
+ JEITO 2 — Pelo link seguro (https), inclusive no celular
+------------------------------------------------------------
+ 1. Abra o link do app que o professor enviar (endereço https).
+ 2. Toque em "Entrar no estúdio".
+ 3. Para o microfone: abra o app em TELA CHEIA (guia própria
+    do navegador) — dentro de prévias embutidas o navegador
+    bloqueia o microfone. Na dúvida, use o botão
+    "↗ Abrir o app em tela cheia" dentro do app e copie o
+    endereço para uma guia nova.
+ 4. Permita o microfone quando o navegador perguntar.
+
+ INSTALAR NA TELA INICIAL (vira aplicativo, funciona offline):
+ • Android/Chrome: menu ⋮ → "Instalar app" / "Adicionar à
+   tela inicial".
+ • iPhone/Safari: Compartilhar → "Adicionar à Tela de Início".
+ • Computador (Chrome/Edge): ícone de instalar na barra de
+   endereços → Instalar.
+
+------------------------------------------------------------
+ MICROFONE NÃO RESPONDE? Confira nesta ordem:
+------------------------------------------------------------
+ 1. Você está em localhost ou no link https (NÃO no arquivo
+    index.html aberto direto, NÃO dentro de prévia embutida).
+ 2. Clique no cadeado da barra de endereços → Microfone →
+    Permitir. Depois toque em "Ligar microfone" de novo.
+ 3. Feche outros apps que usam o microfone (chamada, gravador,
+    outra guia do navegador).
+ 4. No app: Afinação → "🔄 Buscar microfones" e escolha o
+    microfone certo na lista.
+
+------------------------------------------------------------
+ Seus dados (turma, fichas, gravações) ficam salvos no próprio
+ navegador/computador — nada sai para a internet.
+
+ Material educativo. Não substitui avaliação de
+ otorrinolaringologista e fonoaudiólogo.
+ — Prof. Alê da Voz
+============================================================

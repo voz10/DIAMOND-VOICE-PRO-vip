@@ -1,0 +1,7 @@
+{
+  "name": "vocal-studio-pro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Estúdio digital de treinamento e capacitação vocal"
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07111F">
+<meta name="description" content="DV PRO (Diamond Voice Pro) — estúdio do professor para lapidar vozes.">
+<title>DV PRO · Diamond Voice Pro — Lapidando vozes preciosas</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307111F'/%3E%3Cg fill='none' stroke='%2322D3EE' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M12 40c4 0 4-16 8-16s4 16 8 16 4-16 8-16 4 16 8 16 4-16 8-16'/%3E%3C/g%3E%3Ccircle cx='32' cy='18' r='4' fill='%237C3AED'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./src/css/app.css">
+</head>
+<body>
+
+<!-- ============ BOOT ============ -->
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-mark"><img class="dv-logo-img" src="./src/assets/logo-dvpro.png" alt="DV PRO · Diamond Voice Pro"></div>
+    <p class="boot-frase">Lapidando vozes preciosas</p>
+    <p class="boot-cita">“Não prometo te transformar no melhor, mas te ajudarei a melhorar o que você tem.”<br><span>— Alê da Voz</span></p>
+    <div class="boot-bar"><i id="bootBar"></i></div>
+    <p class="boot-status" id="bootStatus">Iniciando motor de áudio…</p>
+    <button id="bootStart" class="btn btn-primary btn-lg" hidden>Entrar no estúdio</button>
+    <p class="boot-note">Material educativo. Não substitui avaliação de otorrinolaringologista e fonoaudiólogo.</p>
+  </div>
+</div>
+
+<!-- ============ APP ============ -->
+<div id="app" class="app" hidden aria-hidden="true">
+
+  <div id="scrim" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><img class="dv-emb" src="./src/assets/logo-emblema.png" alt="DV PRO"></span>
+      <div class="brand-txt"><b>DV <em>PRO</em></b><span>DIAMOND VOICE PRO</span></div>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal"></nav>
+
+    <div class="side-foot">
+      <div class="who" id="whoBox" title="Trocar perfil"></div>
+      <div class="side-mini">
+        <button class="icon-btn" id="btnOffline" title="Status offline" aria-label="Status de conexão">
+          <span class="dot" id="offlineDot"></span><span id="offlineTxt">Online</span>
+        </button>
+        <button class="icon-btn" id="btnVoz" title="Clipes de narração instalados" aria-label="Clipes de narração">
+          <span class="dot" id="vozDot"></span><span id="vozTxt">Voz</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn only-mobile" id="btnMenu" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+      <div class="crumb"><span id="crumbMain">Painel</span><em id="crumbSub"></em></div>
+      <div class="top-actions">
+        <div class="weekchip" id="weekChip" title="Semana do programa"></div>
+        <button class="icon-btn" id="btnSearch" title="Buscar (Ctrl+K)" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn" id="btnAjuda" aria-label="Atalhos e ajuda" title="Atalhos e ajuda (H)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.4"/><path d="M12 17h.01"/>
+          </svg>
+        </button>
+        <button class="icon-btn" id="btnSettings" title="Configurações" aria-label="Configurações">
+          <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="ficha-banner" id="fichaBanner" hidden>
+      <span class="ficha-dot"></span>
+      <span id="fichaTxt">Vendo ficha do aluno</span>
+      <span class="sp"></span>
+      <button class="btn btn-sm btn-primary" id="btnSairFicha" type="button">↩ Voltar à minha área (professor)</button>
+    </div>
+
+    <div class="view" id="view" tabindex="-1"></div>
+  </main>
+
+  <!-- transport dock -->
+  <div class="dock" id="dock">
+    <div class="dock-transport">
+      <button class="btn btn-ghost btn-sm" id="dockMetro" title="Metrônomo">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 3l7 18-7-4-7 4z" fill="currentColor"/></svg>
+        <span id="dockBpm">—</span>
+      </button>
+    </div>
+    <div class="dock-pitch" id="dockPitch" hidden>
+      <span class="dp-note" id="dpNote">—</span>
+      <span class="dp-cents" id="dpCents"></span>
+      <div class="dp-meter"><i id="dpNeedle"></i><b class="dp-center"></b></div>
+    </div>
+    <div class="dock-right">
+      <span class="dock-latency" id="dockLatency" title="Latência do áudio"></span>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+</div>
+
+<!-- ============ MODAL / SHEET ============ -->
+<div class="modal-root" id="modalRoot" hidden>
+  <div class="modal-backdrop" data-close="1"></div>
+  <div class="modal" role="dialog" aria-modal="true" id="modalBox"></div>
+</div>
+
+<div class="search-root" id="searchRoot" hidden>
+  <div class="modal-backdrop" data-close="1"></div>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Buscar">
+    <input type="search" id="searchInput" placeholder="Buscar aulas, exercícios, ferramentas…" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<script>
+/* Guarda de abertura: o app NÃO roda a partir do arquivo solto (file://),
+   porque o navegador bloqueia os módulos e o microfone nesse modo.
+   Em vez de uma tela travada ("bugada"), mostramos o caminho certo. */
+(function () {
+  function aviso(titulo, html) {
+    var boot = document.getElementById('boot');
+    if (!boot || boot.dataset.avisado) return;
+    boot.dataset.avisado = '1';
+    boot.innerHTML = '<div style="max-width:560px;margin:8vh auto;padding:28px;background:#101D31;' +
+      'border:1px solid #7C3AED;border-radius:18px;color:#F8FAFC;font-family:system-ui,sans-serif;' +
+      'box-shadow:0 20px 60px rgba(0,0,0,.55);text-align:left">' +
+      '<h1 style="font-size:20px;margin:0 0 10px">◆ DV PRO — como abrir do jeito certo</h1>' +
+      '<p style="color:#F59E0B;font-weight:700;margin:0 0 10px">' + titulo + '</p>' + html + '</div>';
+  }
+  if (location.protocol === 'file:') {
+    document.addEventListener('DOMContentLoaded', function () {
+      aviso('Você abriu só o arquivo index.html — assim o app não consegue ligar (nem o microfone).',
+        '<ol style="line-height:1.65;color:#CBD5E1;padding-left:20px;margin:0">' +
+        '<li>Baixe e <b>descompacte a pasta completa</b> do app (DV-PRO-completo.zip) — não abra o index solto.</li>' +
+        '<li>Dentro da pasta, clique duas vezes em <b>iniciar-app.bat</b> (Windows) ou <b>iniciar-app.sh</b> (Mac/Linux).</li>' +
+        '<li>O app abre sozinho no navegador em <b>http://localhost:3000</b> — nesse endereço o microfone funciona.</li>' +
+        '<li>Quando pedir, clique em <b>Permitir</b> o microfone.</li></ol>' +
+        '<p style="color:#94A3B8;font-size:13px;margin:12px 0 0">Por quê? Abrindo o arquivo direto, o navegador bloqueia os módulos do app e o microfone por segurança (erro CORS de file://). Pelo endereço local (localhost) ou pelo link seguro (https), tudo funciona.</p>');
+    });
+    return;
+  }
+  /* Se o boot não concluir em 15s (rede/módulo falhou), mostra ajuda em vez de travar. */
+  setTimeout(function () {
+    if (!window.__dvproBootOk) {
+      aviso('O app demorou para carregar.',
+        '<p style="line-height:1.6;color:#CBD5E1;margin:0">Confira a conexão e <b>recarregue a página</b>. ' +
+        'Se você abriu o arquivo index.html direto da pasta de downloads, feche e use o pacote completo com o iniciador (iniciar-app), ou abra o app pelo link seguro no navegador.</p>');
+    }
+  }, 15000);
+})();
+</script>
+<script type="module" src="./src/js/main.js"></script>
+<noscript><p style="color:#F8FAFC;padding:2rem">Este aplicativo precisa de JavaScript ativado.</p></noscript>
+</body>
+</html>
