@@ -1,44 +1,49 @@
 ============================================================
- DV PRO ONLINE — como colocar o app no ar (link https)
+ DV PRO ONLINE — ACESSO DIRETO VIA NAVEGADOR (SÓ PRECISA DE INTERNET)
 ============================================================
-O DV PRO é um app web estático: ele funciona 100% online por
-um endereço https, e é nesse endereço que o microfone, os
-áudios com os nomes dos alunos e todas as funções trabalham
-perfeitamente (o navegador exige https ou localhost para
-liberar o microfone).
+O DV PRO (Diamond Voice Pro) foi 100% construído em padrões web
+universais (HTML5, JavaScript moderno, Web Audio, PWA).
 
-JEITO MAIS FÁCIL (5 minutos, grátis, sem programar):
- 1. Entre em https://app.netlify.com/drop (Netlify Drop).
- 2. Arraste a pasta DV-PRO (descompactada) para a página.
- 3. Pronto: você recebe um link https://....netlify.app —
-    é o app ONLINE. Abra esse link, permita o microfone e use.
-    No celular, use "Instalar app / Adicionar à tela inicial".
+Ele NÃO depende do Netlify Drop nem de nenhuma ferramenta específica:
+basta um link na internet (https) e você ou seus alunos podem abrir
+direto em qualquer navegador (Chrome, Safari, Edge, Firefox, celular
+ou computador).
 
-OUTRAS OPÇÕES GRÁTIS (mesma ideia, arrastar a pasta):
- • Vercel:  https://vercel.com/new  (deploy de pasta estática)
- • GitHub Pages: repositório com os arquivos → Settings → Pages
+------------------------------------------------------------
+COMO TER O SEU LINK ONLINE PERMANENTE E DIRETO (SEM ARRASTAR PASTAS):
+------------------------------------------------------------
 
-DEPOIS DE PUBLICAR:
- • Compartilhe o link https com quem for usar.
- • Microfone: sempre pelo link https, em guia própria do
-   navegador (não dentro de prévia embutida), tocando em
-   Permitir quando o navegador perguntar.
- • Os dados (turma e fichas) ficam salvos em cada aparelho/
-   navegador onde o app é usado.
+OPÇÃO 1 — GITHUB PAGES (100% Gratuito, Permanente e Sem Manutenção):
+ 1. Crie um repositório no GitHub (ex: "dv-pro").
+ 2. Suba os arquivos do projeto.
+ 3. Vá em Settings → Pages → Selecione a branch "main" e salve.
+ 4. Pronto! Seu link oficial estará no ar para sempre em:
+    https://seunome.github.io/dv-pro/
+    (Qualquer alteração que você fizer atualiza todos os usuários sozinhos).
 
-ATUALIZOU O APP? Publique a pasta de novo no mesmo serviço
-que o link é atualizado.
+OPÇÃO 2 — CLOUDFLARE PAGES / VERCEL:
+ • Conecte sua conta do GitHub ao Cloudflare Pages ou Vercel.
+ • O link permanente é gerado na hora (ex: https://dv-pro.pages.dev).
+ • Custo zero, velocidade ultra-rápida global e atualizações 100% automáticas.
+
+OPÇÃO 3 — SEU PRÓPRIO DOMÍNIO / HOSPEDAGEM (Hostinger, Locaweb, cPanel, etc.):
+ • Basta enviar os arquivos para a pasta pública do seu site.
+ • Acesse direto pelo seu domínio: https://seudominio.com.br/dv-pro
+
+------------------------------------------------------------
+COMO USAR DIRETO NO CELULAR OU COMPUTADOR (PWA):
+------------------------------------------------------------
+ 1. Abra o seu link no navegador (Safari no iPhone ou Chrome no Android/PC).
+ 2. Toque no botão de compartilhar/menu do navegador e escolha:
+    "Adicionar à Tela de Início" ou "Instalar Aplicativo".
+ 3. O ícone oficial do DV PRO aparecerá na tela do seu aparelho como um APP NATIVO.
+ 4. O app abre em tela cheia, sem barra de navegação, com áudio e microfone liberados,
+    e funciona inclusive SEM internet (offline) graças ao Service Worker inteligente.
+
+------------------------------------------------------------
+SEGURANÇA E MICROFONE:
+------------------------------------------------------------
+ • O navegador exige conexão segura (HTTPS ou localhost) para ligar o microfone.
+ • Todos os dados dos alunos, gravações e análises de IA são processados
+   100% localmente no navegador do usuário, com sigilo e privacidade total.
 ============================================================
-
-ATUALIZAÇÃO AUTOMÁTICA (a partir da vsp-v19):
- • Depois que você publica uma versão nova, o app nos
-   aparelhos dos usuários se atualiza SOZINHO: ele confere a
-   versão a cada minuto e ao abrir/voltar para a aba, baixa a
-   versão nova e recarrega uma vez. Ninguém precisa limpar
-   cache, reinstalar nem fazer nada.
- • Para PUBLICAR a versão nova continua sendo arrastar a
-   pasta (jeito acima). Quer publicar sem nem arrastar?
-   Conecte um repositório do GitHub ao Netlify
-   (Site settings → Build & deploy → Link repository):
-   aí cada envio para o GitHub publica e atualiza todos
-   os aparelhos automaticamente.

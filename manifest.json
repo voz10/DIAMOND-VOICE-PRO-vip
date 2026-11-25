@@ -1,0 +1,413 @@
+{
+  "geradoEm": "2026-10-14T15:04:50.884Z",
+  "total": 81,
+  "arquivos": [
+    "cue-contagem.mp3",
+    "cue-descanse.mp3",
+    "cue-inspire.mp3",
+    "cue-muitobem.mp3",
+    "cue-preparar.mp3",
+    "cue-relaxe.mp3",
+    "cue-segure.mp3",
+    "cue-solte.mp3",
+    "cue-suba.mp3",
+    "cue-sustente.mp3",
+    "ex-E1.1.mp3",
+    "ex-E1.2.mp3",
+    "ex-E1.3.mp3",
+    "ex-E1.4.mp3",
+    "ex-E1.5.mp3",
+    "ex-E2.1.mp3",
+    "ex-E2.2.mp3",
+    "ex-E2.3.mp3",
+    "ex-E2.4.mp3",
+    "ex-E2.5.mp3",
+    "ex-E2.6.mp3",
+    "ex-E3.1.mp3",
+    "ex-E3.2.mp3",
+    "ex-E3.3.mp3",
+    "ex-E3.4.mp3",
+    "ex-E3.5.mp3",
+    "ex-E3.6.mp3",
+    "ex-E4.1.mp3",
+    "ex-E4.2.mp3",
+    "ex-E4.3.mp3",
+    "ex-E4.4.mp3",
+    "ex-E4.5.mp3",
+    "ex-E5.1.mp3",
+    "ex-E5.2.mp3",
+    "ex-E5.3.mp3",
+    "ex-E5.4.mp3",
+    "ex-E5.5.mp3",
+    "ex-E5.6.mp3",
+    "ex-E6.1.mp3",
+    "ex-E6.2.mp3",
+    "ex-E6.3.mp3",
+    "ex-E6.4.mp3",
+    "ex-E6.5.mp3",
+    "ex-E6.6.mp3",
+    "ex-E7.1.mp3",
+    "ex-E7.2.mp3",
+    "ex-E7.3.mp3",
+    "ex-E7.4.mp3",
+    "ex-E7.5.mp3",
+    "nome-aline.mp3",
+    "nome-ana.mp3",
+    "nome-andre.mp3",
+    "nome-antonio.mp3",
+    "nome-beatriz.mp3",
+    "nome-bruno.mp3",
+    "nome-camila.mp3",
+    "nome-carlos.mp3",
+    "nome-cristiane.mp3",
+    "nome-diego.mp3",
+    "nome-felipe.mp3",
+    "nome-fernanda.mp3",
+    "nome-gabriel.mp3",
+    "nome-gilvan.mp3",
+    "nome-joao.mp3",
+    "nome-jose.mp3",
+    "nome-juliana.mp3",
+    "nome-larissa.mp3",
+    "nome-lucas.mp3",
+    "nome-luciano.mp3",
+    "nome-marcos.mp3",
+    "nome-maria.mp3",
+    "nome-mariana.mp3",
+    "nome-patricia.mp3",
+    "nome-paulo.mp3",
+    "nome-pedro.mp3",
+    "nome-rafael.mp3",
+    "nome-talison.mp3",
+    "nome-thiago.mp3",
+    "nome-tonny.mp3",
+    "nome-totty.mp3",
+    "nome-vanessa.mp3"
+  ],
+  "detalhes": [
+    {
+      "arquivo": "cue-contagem.mp3",
+      "bytes": 28648
+    },
+    {
+      "arquivo": "cue-descanse.mp3",
+      "bytes": 31155
+    },
+    {
+      "arquivo": "cue-inspire.mp3",
+      "bytes": 36380
+    },
+    {
+      "arquivo": "cue-muitobem.mp3",
+      "bytes": 36380
+    },
+    {
+      "arquivo": "cue-preparar.mp3",
+      "bytes": 87580
+    },
+    {
+      "arquivo": "cue-relaxe.mp3",
+      "bytes": 33663
+    },
+    {
+      "arquivo": "cue-segure.mp3",
+      "bytes": 20915
+    },
+    {
+      "arquivo": "cue-solte.mp3",
+      "bytes": 33663
+    },
+    {
+      "arquivo": "cue-suba.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "cue-sustente.mp3",
+      "bytes": 31155
+    },
+    {
+      "arquivo": "ex-E1.1.mp3",
+      "bytes": 151528
+    },
+    {
+      "arquivo": "ex-E1.2.mp3",
+      "bytes": 149020
+    },
+    {
+      "arquivo": "ex-E1.3.mp3",
+      "bytes": 141288
+    },
+    {
+      "arquivo": "ex-E1.4.mp3",
+      "bytes": 128540
+    },
+    {
+      "arquivo": "ex-E1.5.mp3",
+      "bytes": 138780
+    },
+    {
+      "arquivo": "ex-E2.1.mp3",
+      "bytes": 136063
+    },
+    {
+      "arquivo": "ex-E2.2.mp3",
+      "bytes": 146303
+    },
+    {
+      "arquivo": "ex-E2.3.mp3",
+      "bytes": 141288
+    },
+    {
+      "arquivo": "ex-E2.4.mp3",
+      "bytes": 136063
+    },
+    {
+      "arquivo": "ex-E2.5.mp3",
+      "bytes": 166783
+    },
+    {
+      "arquivo": "ex-E2.6.mp3",
+      "bytes": 151528
+    },
+    {
+      "arquivo": "ex-E3.1.mp3",
+      "bytes": 149020
+    },
+    {
+      "arquivo": "ex-E3.2.mp3",
+      "bytes": 164275
+    },
+    {
+      "arquivo": "ex-E3.3.mp3",
+      "bytes": 149020
+    },
+    {
+      "arquivo": "ex-E3.4.mp3",
+      "bytes": 151528
+    },
+    {
+      "arquivo": "ex-E3.5.mp3",
+      "bytes": 174515
+    },
+    {
+      "arquivo": "ex-E3.6.mp3",
+      "bytes": 159260
+    },
+    {
+      "arquivo": "ex-E4.1.mp3",
+      "bytes": 166783
+    },
+    {
+      "arquivo": "ex-E4.2.mp3",
+      "bytes": 154035
+    },
+    {
+      "arquivo": "ex-E4.3.mp3",
+      "bytes": 161768
+    },
+    {
+      "arquivo": "ex-E4.4.mp3",
+      "bytes": 172008
+    },
+    {
+      "arquivo": "ex-E4.5.mp3",
+      "bytes": 172008
+    },
+    {
+      "arquivo": "ex-E5.1.mp3",
+      "bytes": 161768
+    },
+    {
+      "arquivo": "ex-E5.2.mp3",
+      "bytes": 156543
+    },
+    {
+      "arquivo": "ex-E5.3.mp3",
+      "bytes": 156543
+    },
+    {
+      "arquivo": "ex-E5.4.mp3",
+      "bytes": 169500
+    },
+    {
+      "arquivo": "ex-E5.5.mp3",
+      "bytes": 169500
+    },
+    {
+      "arquivo": "ex-E5.6.mp3",
+      "bytes": 174515
+    },
+    {
+      "arquivo": "ex-E6.1.mp3",
+      "bytes": 164275
+    },
+    {
+      "arquivo": "ex-E6.2.mp3",
+      "bytes": 146303
+    },
+    {
+      "arquivo": "ex-E6.3.mp3",
+      "bytes": 159260
+    },
+    {
+      "arquivo": "ex-E6.4.mp3",
+      "bytes": 169500
+    },
+    {
+      "arquivo": "ex-E6.5.mp3",
+      "bytes": 164275
+    },
+    {
+      "arquivo": "ex-E6.6.mp3",
+      "bytes": 159260
+    },
+    {
+      "arquivo": "ex-E7.1.mp3",
+      "bytes": 159260
+    },
+    {
+      "arquivo": "ex-E7.2.mp3",
+      "bytes": 161768
+    },
+    {
+      "arquivo": "ex-E7.3.mp3",
+      "bytes": 149020
+    },
+    {
+      "arquivo": "ex-E7.4.mp3",
+      "bytes": 169500
+    },
+    {
+      "arquivo": "ex-E7.5.mp3",
+      "bytes": 164275
+    },
+    {
+      "arquivo": "nome-aline.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-ana.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-andre.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-antonio.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-beatriz.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-bruno.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-camila.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-carlos.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-cristiane.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-diego.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-felipe.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-fernanda.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-gabriel.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-gilvan.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-joao.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-jose.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-juliana.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-larissa.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-lucas.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-luciano.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-marcos.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-maria.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-mariana.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-patricia.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-paulo.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-pedro.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-rafael.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-talison.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-thiago.mp3",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "nome-tonny.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-totty.mp3",
+      "bytes": 13183
+    },
+    {
+      "arquivo": "nome-vanessa.mp3",
+      "bytes": 13183
+    }
+  ]
+}
